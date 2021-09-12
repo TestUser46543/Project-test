@@ -1,11 +1,6 @@
 pipeline{
     agent any
     stages{
-        stage('Checkout SCM'){
-            steps{
-                git url: 'https://github.com/TestUser46543/Project-test.git'
-            }
-        }
 
         stage('SonarQube analysis') {
          steps {
